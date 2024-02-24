@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Website</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <Section id="home">
+        <header class="header">
+            <a href="#" class="logo">Portfolio.</a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#" >Home</a>
+                <a href="#" onclick="openNav1()"> About</a>
+                <a href="#skills" onclick="closeNav1()">Skills</a>
+                <a href="#projects" onclick="closeNav1()">Projects</a>
+                <a href="#Contact" onclick="closeNav1()">Contact Me</a>
+            </nav>
+
+        </header>
+    </Section>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+        <div class="overlay-content1">
+            <a href="#PersonalInfo" onclick="closeNav1()">Personal Info</a>
+            <a href="#academic" onclick="closeNav1()">Academics</a>
+            <a href="#projects" onclick="closeNav1()">Projects</a>
+            <a href="#skills" onclick="closeNav1()">Skiils</a>
+            <a href="">Blogs</a>
+        </div>
+    </div>
+
+
+    <section class="home">
+        <div class="home-content">
+            <h3> Hello</h3>
+            <h3> My Name is</h3>
+            <h1>Dhiraj Pratim Barman</h1>
+            <h3>I am a Frontend Web Developer !</h3>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#" class="btn" onclick="openNav()">Know More</a>
+        </div>
+        <div class="home-image">
+
+        </div>
+
+    </section>
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="#skills" onclick="closeNav()">My Skills</a>
+            <a href="#PersonalInfo"onclick="closeNav()" >About Me</a>
+            <a href="#projects" onclick="closeNav()">My Projects</a>
+            <a href="#Contact"  onclick="closeNav()">Contact Me</a>
+        </div>
+
+    </div>
+
+    <section class="about" id="PersonalInfo">
+        <div class="about-img">
+            <img src="/oie_jpg2.png">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">
+                About
+            </h2>
+            <h3>Dhiraj Pratim Barman</h3>
+            <p>
+                I am a student of Jorhat Engineering College located at Garmur of Jorhat,Assam. I am currently pursuing
+                Bachelor of Technology<br>
+                in Computer Science and Engineering. I am student who has lots of enthusiasm and Skills. I have
+                completed many courses in various platforms.<br>
+                Some of which can be accessed in the academics section. I have done my Academic Internship from Tezpur
+                University,Tezpur in 2023 in Machine Learning<br>
+                I also have excellent skills in Frontend Web Developement and currently I am looking for Jobs <br>
+            </p>
+            <a href=""> <button class="about-btn">Download CV</button></a>
+        </div>
+    </section>
+    <section class="academics" id="academic">
+            <h2 class="heading">My <span>Academics</span></h2>
+
+        <div class="academics-container">
+            <div class="academics-box">
+                <i class='bx bx-book-reader'></i>
+                <h3>Class 10</h3>
+                <a href="https://drive.google.com/file/d/1eL2pMEvt0sN-qon9ag8sBQwVc1C5piLt/view?usp=sharing" class="btn">Open</a>
+            </div>
+            <div class="academics-box">
+                <i class='bx bx-book-reader'></i>
+                <h3>Class 12</h3>
+                <a href="https://drive.google.com/file/d/1DpKQzU_Pac0olqHS-v8vyGWLftXNSjVI/view?usp=sharing" class="btn">Open</a>
+            </div>
+            <div class="academics-box">
+                <i class='bx bx-note'></i>
+                <h3>Coursera Certificate</h3>
+                <a href="" class="btn">Coming Soon</a>
+            </div>
+
+        </div>
+        <div class="academics-container1">
+            <div class="academics-box1">
+                <i class='bx bx-certification'></i>
+                <h3>Academic Internship</h3>
+                <a href="https://drive.google.com/file/d/15rToAHx0vweg7Te8t57daqshHoJsX33k/view?usp=sharing" class="btn">Open</a>
+            </div>
+            <div class="academics-box1">
+                <i class='bx bx-note'></i>
+                <h3>Udemy Certificate</h3>
+                <a href="" class="btn">Coming Soon</a>
+            </div>
+            <div class="academics-box1">
+                <i class='bx bx-note'></i>
+                <h3>Industrial Internship</h3>
+                <a href="" class="btn">Coming Soon</a>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bxl-c-plus-plus'></i>
+                <h3>C++</h3>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3' ></i>
+                <h3>Web Developement</h3>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-react' ></i>
+                <h3>React.js</h3>
+                <a href="" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>   
+        <div class="project-container">
+            <div class="project-box">
+                <img class="img" src="/photo-1530563885674-66db50a1af19.jpg">
+                <div class="project-layer">
+                    <h4>Weather Website</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate eveniet quaerat exercitationem! Iste similique deleniti suscipit, obcaecati perferendis nobis accusantium quis eaque maiores aliquam voluptate, quos unde inventore atque.</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/photo-1565106430482-8f6e74349ca1.jpg">
+                <div class="project-layer">
+                    <h4>Para Generator</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate eveniet quaerat exercitationem! Iste similique deleniti suscipit, obcaecati perferendis nobis accusantium quis eaque maiores aliquam voluptate, quos unde inventore atque.</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/photo-1593720213428-28a5b9e94613.jpg">
+                <div class="project-layer">
+                    <h4>E-Commerce website</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate eveniet quaerat exercitationem! Iste similique deleniti suscipit, obcaecati perferendis nobis accusantium quis eaque maiores aliquam voluptate, quos unde inventore atque.</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Contact" id="Contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="30" placeholder="Your Message"></textarea>
+            <input type="Submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <div class="footer">
+        <div class="list">
+            <ul>
+                <li>
+                    <h2>About Me</h2><br>
+                    <a onclick="openNav1()">Academics</a><br><br>
+                    <a>Skills</a><br><br>
+                    <a>Projects</a><br><br>
+
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li>
+                    <h2>Projects</h2><br>
+                    <a>Weather website</a><br><br>
+                    <a>Para Generator</a><br><br>
+                    <a>Stopwatch</a><br><br>
+
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li>
+                    <h2>Certificates</h2><br>
+                    <a>Academics</a><br><br>
+                    <a>Industrial</a><br><br>
+                    <a>Coursera</a><br><br>
+
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li>
+                    <h2>CONTACT ME</h2><br>
+                    <a>PHONE: 9864534725</a><br><br>
+                    <a>ADDRESS: JORHAT ENGINNERING COLLEGE</a><br><br>
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="index.js" crossorigin="anonymous"></script>
+
+    <section>
+
+    </section>
+</body>
+
+</html>
